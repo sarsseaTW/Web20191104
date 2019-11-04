@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>食譜列表</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">上一頁</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">中式餐點</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="food_cn_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#food1" data-transition="slide">孜然酸菜燴豆腐</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#food2" data-transition="flip">白玉苦瓜炒滑蛋</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#food3" data-transition="slideup">麻辣炒雙絲</a>
+                </li>
+            </ul>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">西式餐點</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="food_na_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#food4" data-transition="slide">紅豆抹茶毛巾卷</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#food5" data-transition="flip">蝴蝶酥</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#food6" data-transition="slideup">瑞士蛋捲</a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+    
+    <!-- 孜然酸菜燴豆腐 Page: Content  -->
+    <div id="food1" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食譜介紹</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">上一頁</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">食譜簡介</div><br>
+            <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">孜然有溫中暖脾、降火平肝、開胃下氣、消食化積、醒腦通脈、祛寒除濕、祛風止痛等功效。<br>
+                用它來烹煮素菜，會令食材增添鲜美芳香，增加食慾。<br>
+            </div><br>
+            
+            <div class="ui-grid-b" style="height: 180px">
+                <div class="ui-block-a"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">材料準備</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        炸豆腐 3件(切小塊)<br>
+                        酸菜 1小棵<br>
+                        毛豆 半碗<br>
+                        紅燈籠椒 半個(切小塊)<br>
+                        蒜片 少許<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">調味料準備</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">孜然醬 1包<br>
+                        糖 1茶匙<br>
+                        水 1碗<br>
+                    </div><br>
+                </div>
+            </div>
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">步驟預覽</div><br>
+            <div class = "ytp-title-text">
+                <a class="ytp-title-link yt-uix-sessionlink" target="_blank" data-sessionlink="feature=play-title"
+                href="https://www.youtube.com/watch?v=sPxiVOpRlIY">[孜然酸菜燴豆腐]</a>
+            </div>
+            <div><img src="images/food1.jfif" style="width:100%;"></div>
+        </div>
+    </div>
+    
+    <!-- 白玉苦瓜炒滑蛋 Page: Content  -->
+    <div id="food2" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食譜介紹</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">上一頁</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">食譜簡介</div><br>
+            <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">白玉苦瓜瓜味清新，味道甘而不苦，有美白保肝之效。<br>
+                簡單用來炒雞蛋，既下飯又養生。<br>
+            </div><br>
+            
+            <div class="ui-grid-b" style="height: 180px">
+                <div class="ui-block-a"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">材料準備</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        白玉苦瓜 1 斤<br>
+                        薑 3 片<br>
+                        葱花 1 湯匙<br>
+                        雞蛋 4 隻<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">調味料準備</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        糖 2 茶匙<br>
+                        鮮奶 2 湯匙<br>
+                        鹽 1 茶匙<br>
+                    </div><br>
+                </div>
+            </div>
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">步驟預覽</div><br>
+            <div class="ui-grid-b" style="height: 25% ;width: 30%;">
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food2-1.jfif" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第一步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        白玉苦瓜洗淨切半，用刀或鐵匙去瓜囊。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food2-2.jfif" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第二步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        切去頭尾，切大斜薄片。<br>
+                        白苦瓜片放碗內，加2茶匙鹽拌勻稍醃約5分鐘。<br>
+                        雞蛋、鮮奶和鹽打發均勻，備用。<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food2-3.jfif" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第三步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        燒熱油鑊，苦瓜和蛋都很吃油，油可以放多一點。<br>
+                        先爆香薑片，已醃的白苦瓜擠乾水分，<br>
+                        放入鑊中與薑片同炒，並加入糖。<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food2-4.jfif" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第四步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        白苦瓜炒至半透明，加入葱花炒匀增添香氣。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food2-5.jfif" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第五步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        倒入蛋漿，快炒成滑蛋即可。
+                    </div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 麻辣炒雙絲 Page: Content  -->
+    <div id="food3" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食譜介紹</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">上一頁</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">食譜簡介</div><br>
+            <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">薯仔和牛蒡切絲後浸水可沖走部份澱粉質，炒時可以保留爽脆口感，亦可避免變色發黑。<br>
+            </div><br>
+            
+            <div class="ui-grid-b" style="height: 180px">
+                <div class="ui-block-a"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">材料準備</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        薯仔 400 克<br>
+                        牛蒡 200 克<br>
+                        辣椒 數隻<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">調味料準備</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        花椒油 2 湯匙<br>
+                        鹽 1.5 茶匙<br>
+                        糖 1 茶匙<br>
+                    </div><br>
+                </div>
+            </div>
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">步驟預覽</div><br>
+            <div class = "ytp-title-text">
+                <a class="ytp-title-link yt-uix-sessionlink" target="_blank" data-sessionlink="feature=play-title"
+                href="https://www.youtube.com/watch?v=NFloq1D5NZo">住家素造－麻辣炒雙絲 Spicy Shredded Potato & Burdock Root</a>
+            </div>
+            <div><img src="images/food3.jfif" style="width:100%;"></div>
+        </div>
+    </div>
+    
+    <!-- 紅豆抹茶毛巾卷 Page: Content  -->
+    <div id="food4" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食譜介紹</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">上一頁</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">食譜簡介</div><br>
+            <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                可用朱古力粉代替做成巧克力毛巾卷。<br>
+            </div><br>
+            
+            <div class="ui-grid-b" style="height: 180px">
+                <div class="ui-block-a"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">班戟皮材料</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        麵粉 160 克<br>
+                        砂糖 30 克<br>
+                        抹茶粉 10 克<br>
+                        雞蛋 3 隻<br>
+                        牛奶 480 克<br>
+                        奶油（溶解） 30 克<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">忌廉餡料</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        鮮奶油 400 克<br>
+                        砂糖 25 克<br>
+                        紅豆（視乎個人喜好） 30 克<br>
+                    </div><br>
+                </div>
+            </div>
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">步驟預覽</div><br>
+            <div class="ui-grid-b" style="height: 25% ;width: 30%;">
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food4-1.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第一步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        將班戟皮材料稍作攪拌後，加入牛奶攪拌至無粉粒糊狀，再加入奶油拌勻。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food4-2.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第二步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        將粉漿過篩備用。<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food4-3.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第三步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        鮮奶油加入砂糖打發至硬性發泡的忌廉備用。<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food4-4.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第四步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        平底鍋開小火，倒入一勺粉漿平均分佈在鍋面（薄薄一層即可），1分鐘左右可取出班戟皮。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food4-5.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第五步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        兩片班戟皮左右放好，中間5厘米重疊，在上面抹上忌廉、撒上紅豆。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food4-6.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第六步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        上下兩邊向內摺起，再從左邊卷至另一邊。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food4-7.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第七步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        撒上少許抹茶粉（可忽略）。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food4-8.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第八步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        完成。
+                    </div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--https://cookpad.com/tw/%E6%90%9C%E5%B0%8B/%E8%A5%BF%E5%BC%8F-->
+    <!-- 蝴蝶酥 Page: Content  -->
+    <div id="food5" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食譜介紹</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">上一頁</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">食譜簡介</div><br>
+            <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                1片酥皮可出品14-15塊迷你蝴蝶酥。<br>
+            </div><br>
+            
+            <div class="ui-grid-b" style="height: 180px">
+                <div class="ui-block-a"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">預備食材</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        酥皮 1 片<br>
+                        無鹽奶油 50 克<br>
+                        砂糖 適量<br>
+                    </div>
+                </div>
+            </div>
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">步驟預覽</div><br>
+            <div class="ui-grid-b" style="height: 25% ;width: 30%;">
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food5.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第一步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        先取出酥皮回溫，同時溶解無鹽奶油。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food5-2.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第二步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        在酥皮上刷一層奶油，再撒一層砂糖。<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food5-3.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第三步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        左右兩邊同時後內對疊，再刷奶油及撒糖。<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food5-4.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第四步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        再向內對疊一次，刷奶油及撒糖。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food5-5.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第五步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        兩邊對疊，切頭切尾後把酥皮切件，約1厘米闊。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第六步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        放入190°烤爐烤15分鐘，取出。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food5-7.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第七步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        完成。
+                    </div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 瑞士蛋捲 Page: Content  -->
+    <div id="food6" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食譜介紹</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">上一頁</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">食譜簡介</div><br>
+            <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                在烤爐中將材料烤成薄薄的蛋糕，加上了果醬、奶油（混糖奶油、牛奶蛋糊奶油等）和切碎了的果肉，捲成卷狀。<br>
+                另外可以加上混和的可可粉和咖啡粉，形成鬆軟海綿質感的瑞士卷。<br>
+                瑞士卷在法國是聖誕蛋糕的一種。<br>
+            </div><br>
+            
+            <div class="ui-grid-b" style="height: 180px">
+                <div class="ui-block-a"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">預備食材</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        雞蛋 4 隻<br>
+                        砂糖 50 克<br>
+                        油 60 克<br>
+                        低筋麵粉 70 克<br>
+                        牛奶 90 克<br>
+                    </div>
+                </div>
+                <div class="ui-block-c"style="height: 100%;">
+                    <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">忌廉夾心</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        鮮奶油 150 克<br>
+                        砂糖 15 克<br>
+                    </div>
+                </div>
+            </div>
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%;">步驟預覽</div><br>
+            <div class="ui-grid-b" style="height: 25% ;width: 30%;">
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第一步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        蛋黃打散後加入牛奶攪拌，備用。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-2.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第二步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        將油煮至85°，不能過高，否則容易失敗。<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-3.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第三步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        將熱油倒入已過篩的麵粉當中，攪拌後加入蛋黃牛奶再攪勻，備用。<br>
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-4.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第四步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        把糖分3次倒入蛋白中，用打蛋器打至濕性發泡。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-5.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第五步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        將1/3的蛋霜倒入備用的蛋黃麵粉中，輕輕拌勻後，將其倒入另外2/3的蛋霜中攪拌均勻。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-6.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第六步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        把蛋霜倒入模具（先鋪好烘焙紙）中，刮平表面後輕輕敲模具數下，減少多餘氣泡。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-7.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第七步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        170°預熱烤爐，把蛋霜放入烤爐同樣170°烤25分鐘，然後轉180°烤5分鐘，取出模具後將蛋糕離模（不用取走烘焙紙）待微暖。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-8.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第八步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        鮮奶油加糖打發至出現紋路。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-9.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第九步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        蛋糕微暖後拿在上面鋪一層烘焙紙，翻到後面把烤過的烘培紙拿走。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-10.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第十步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        抹上鮮奶油，捲起蛋糕後切件，放入冰箱擱置30分鐘。
+                    </div><br>
+                </div>
+                <div class="ui-block-a"style="height: 100%;">
+                    <img src="images/food6-11.jpg" style="width:100%;">
+                </div>
+                <div class="ui-block-b"style="height: 100%;">
+                    <div id="hero" style="font-size:12px; font-weight:bold; width:100%;">第十一步</div><br>
+                    <div id="hero" style="font-size:16px; font-weight:bold; width:100%;">
+                        完成。
+                    </div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

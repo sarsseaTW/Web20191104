@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div is="page" id="gIndex" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>金庸著作</h3>
+            <a class="ui-btn ui-btn-left" href="book.html" data-transition="slide" data-direction="reverse">上一頁</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" id="food_cn_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="book2-1.html">射鵰英雄傳</a>
+                </li>
+                <li is="listview-li">
+                    <a href="book2-2.html" data-transition="flip">神鵰俠侶</a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+</body>
+</html>
